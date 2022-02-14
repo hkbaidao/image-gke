@@ -1,0 +1,14 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: image-ingress
+  annotations:
+    kubernetes.io/ingress.global-static-ip-name: "image-function-address"
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /*
+        backend:
+          serviceName: image
+          servicePort: 80
