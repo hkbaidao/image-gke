@@ -1,7 +1,7 @@
 # image-gke
 1 在gcs创建一个bucket用来存放图片           
 2 将文件打包成镜像文件：               
-（1）	Cd /home/image-gke/docker_
+（1）	Cd /home/image-gke/docker_                      
 （2）	Docker build –t gcr.io/项目名/包名 .                   
 （3）	Gcloud docker  -- push gcr.io/项目名/包名                     
 （4）	Sudo vim/home/image-gke/gke/deployment.yaml              
